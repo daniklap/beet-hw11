@@ -1,0 +1,185 @@
+#11 Homework for Lesson 11 for Monday 14 Feb 2024 by Daniel Clapa
+
+Level 1:
+
+1. Which statement about the state transition diagram and the table with test cases is
+Correct?
+
+
+
+
+
+A. These test cases cover valid and invalid transitions in the chart.
+B. These test cases show all possible valid transitions on the chart. ← my answer
+C. These test cases cover some valid transitions on the chart.
+D. These test cases cover pairs of transitions in the diagram.
+
+
+2. Employees of the company are issued bonuses if they have worked for more than a
+year and have fulfilled the goals set in advance. These conditions can be presented in a decision table:
+
+
+
+
+Which scenario that is likely in real life is omitted in the table?
+A. Condition 1 = YES, Condition 2 = NO, 	Condition 3 = YES, 	Action = NO
+B. Condition 1 = YES, Condition 2 = YES, 	Condition 3 = NO, 	Action = YES
+C. Condition 1 = NO, Condition 2 = NO, 	Condition 3 = YES, 	Action = NO ← my answer
+D. Condition 1 = NO, 	Condition 2 = YES, 	Condition 3 = NO, 	Action = NO
+
+Level 2:
+
+2. Make a state and transition diagram for testing the following video game:
+
+After starting the game, you find yourself in the Castle of Mysteries, in a room with two
+corridors — to the right and to the left. If you go to the right, you will get to the dragon. The dragon gives you a riddle. If the answer is correct — you leave the castle and win. If not, the dragon gives another riddle. If you answer incorrectly for the second time, the dragon will eat you and you lose. If you go to the left, you will get to the witch. The witch gives a riddle. If the answer is correct, you leave the castle and win. If the answer is wrong, the witch takes you to the dragon.
+
+
+
+Or, here, if it is accessible: 
+https://www.figma.com/file/sjWmD6S04fHVji6NvHcWEi/Beetroot-Academy-QA-Manual---Lesson-11-Level-2-by-Daniel?type=whiteboard&node-id=0-1&t=Od83qGxYpIBSKSNK-0 
+
+3. How many test cases, according to the diagram, will be enough to test this game?
+
+5
+—-------------------------------------------------------------------------------------------------------------------------
+Level 3:
+
+2. We continue to develop a cat photo sharing app.
+
+a. Write 5 use cases for how a typical user of your app would behave.
+
+Test Case 1
+Title: Add photo to share
+Description: Add a photo of a cat with a comment about it below the photo
+Preconditions: Be logged into the app
+Steps to reproduce 
+Expected results
+1. Click or tap on the “Add photo” button
+1. Options to add from photos or take photo using mobile phone’s camera
+2. Select “Add from photos”
+2. Mobile phone’s photo library opens up
+3. Select a photo (of a cat)
+3. Photo is selected, with a green checked off circle in the top right
+4. Click or tap “Add” button
+4. Photo is added and comment text box appears
+5. Type a comment in the Comment text box
+5. Text is able to be added from the keyboard
+6. Click or tap “Add comment” button
+6. Text is added below the photo
+7. Click or tap on the “Finish” button which has a message before it, “If everything looks good”
+7. Photo and comment is added to user’s streaming account
+
+
+Note: this section, which is grayed out, is for my use-only. It is my initial Test case which includes all the steps to reproduce up to the target functionality (#4) and the Exit. Below it, I broke or separated these steps into individual test cases. 
+Test Case 
+Title: View photo added someone else
+Description: View photo added by a friend
+Preconditions: Be logged into the app
+Steps to reproduce 
+Expected results
+1. Go to another user’s stream
+1. User’s stream of photos is displayed if they were accepted as friend-family
+2. Scroll through their small-sized photos
+2. Scrolling moves up and down
+3. Click or tap on a photo
+3. Photo is enlarged (and displayed) on the full screen
+4. Click or tap on the grayed out Heart icon located at the bottom of the photo
+4. Heart icon of the photo changes to red color
+5. Click or tap on top right X icon to exit from photo
+5. Return to friend’s photo stream 
+
+
+Test Case 2
+Title: View photo stream of a friend
+Description: View photo stream of a friend from a list of friends
+Preconditions: Be logged into the app
+Steps to reproduce 
+Expected results
+1. Click or tap on a friend’s stream from list of friends
+1. Friend’s stream of photos is displayed
+
+
+
+
+
+
+Test Case 3
+Title: Scroll through a friend’s photo stream
+Description: Scroll through all the photos of a friend’s photo stream
+Preconditions: Be logged into the app and viewing a friend’s photo stream
+Steps to reproduce 
+Expected results
+1. Scroll through friend’s small-sized photos
+1. Scrolling moves up and down navigating through photo stream
+
+
+
+
+
+
+Test Case 4
+Title: View a friend’s full-sized photo
+Description: Select to view a friend’s full-sized photo from their photo stream
+Preconditions: Be logged into the app, and viewing a friend’s photo stream
+Steps to reproduce 
+Expected results
+1. Click or tap on a photo from a friend’s photo stream
+1. Photo is enlarged (and displayed) on the full screen
+
+
+
+
+
+
+Test Case 5
+Title: “Like” a friend’s full-sized photo
+Description: Show that user likes a photo by clicking or tapping on the “Heart” icon of a photo displayed in full-size
+Preconditions: Be logged into the app, viewing a friend’s full-sized photo after having navigated to the their photo stream
+Steps to reproduce 
+Expected results
+1. Click or tap on the grayed out “Heart” icon located at the bottom of the photo
+1. The “Heart” icon of the photo changes to red color
+
+
+
+
+
+
+Test Case 6
+Title: Add a comment on a friend’s full-sized photo
+Description: 
+Preconditions: Be logged into the app, viewing a friend’s photo stream, and one of their full-sized photo
+Steps to reproduce 
+Expected results
+1. Click or tap on the “Comment” icon located at the bottom of the photo, next to the Heart icon
+1. Comment text box pops out
+2. Type a comment in the “Comment” box
+2. Typing from the keyboard is allowed
+3. Click or tap on the “Done” button when writing comment is complete
+3. Comment is added to the bottom of the photo, below the original photo’s comment
+
+
+Test Case 7
+Title: Exit a friend’s full-sized photo
+Description: 
+Preconditions: Be logged into the app, viewing a friend’s photo stream, and one of their full-sized photo
+Steps to reproduce 
+Expected results
+1. Click or tap on top right X icon to exit from photo
+1. Return to friend’s photo stream 
+
+
+
+
+
+
+
+b. Draw a state transition diagram based on the written user scenarios and make a
+decision table for one of the options.
+
+
+Or, link: 
+https://www.figma.com/file/FefbCi3h6xQmroQYtrdoWA/BeetrootA-Homework11-photoApp-stateTD?type=whiteboard&node-id=0-1&t=C85Ah8PKKRoBmmrD-0 
+
+
